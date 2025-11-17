@@ -13,3 +13,9 @@ jobs:
       - name: Notification
         run: echo "I'll list files."
       - run: ls -al
+  goodbye:
+    needs: greet
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Goodbye (${COURSE})"
+      - run: ls -al
