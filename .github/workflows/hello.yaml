@@ -7,3 +7,6 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello from GitHub Actions!"
+      - name: Notification
+        run: echo "I'll list files."
+      - run: ls -al
